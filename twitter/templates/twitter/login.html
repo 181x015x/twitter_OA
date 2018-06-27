@@ -1,0 +1,10 @@
+{% extends "twitter/base.html" %}
+
+{% block title %}twitter login{% endblock title %}
+
+{% block body %}
+
+<div>
+    <button type="button" onclick="location.href='{% url 'social:begin' 'twitter' %}'">Twitterログイン</button>
+</div>
+{% endblock body %}

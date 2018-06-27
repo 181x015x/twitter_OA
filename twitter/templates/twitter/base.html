@@ -1,0 +1,18 @@
+{% load i18n static %}
+<!DOCTYPE html>{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="{% static 'twitter/css/bootstrap.min.css' %}">
+{% block extra_css %}{% endblock %}
+<title>{% block title %}twitter api{% endblock %}</title>
+</head>
+<body>
+
+<script src="{% static 'twitter/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'twitter/js/bootstrap.bundle.min.js' %}"></script>
+{% block extra_js %}{% endblock %}
+{% block body %}{% endblock %}
+</body>
+</html>
