@@ -132,6 +132,6 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.twitter.TwitterOAuth',
     'django.contrib.auth.backends.ModelBackend',
 ]
-SOCIAL_AUTH_TWITTER_KEY = 'xaxV7qRjhMtjf8NwFMQ0P8FpP'
-SOCIAL_AUTH_TWITTER_SECRET = 'HwFGWy2lft23akAy0QjFqPGQsHJkpFXqrfehC8MtZowND8pG6B'
+SOCIAL_AUTH_TWITTER_KEY = 'x'
+SOCIAL_AUTH_TWITTER_SECRET = 'x'
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/twitter/top'
