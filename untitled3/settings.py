@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'twitter',
     'bootstrap4',
     'social_django',
+
 ]
 
 

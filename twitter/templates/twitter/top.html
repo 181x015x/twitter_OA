@@ -3,21 +3,45 @@
 {% block title %}top{% endblock title %}
 
 {% block body %}
-    <script>
-    alert("機密情報が表示されます.")
-    </script>
-    <div>
-        <a href="/twitter/logout"><button type="button" >ログアウト</button></a>
+
+<div class="container">
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">文字数で成長するやつ
+        <small>TwitGrow</small>
+      </h1>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">status</h3>
+
+                 <table class="table table-bordered">
+  <tr><td>名前</td><td>{{ user.access_token.screen_name }}</td></tr>
+  <tr><td>取得経験値</td><td>{{ length }}</td></tr>
+  <tr><td>フォロワー数</td><td>{{ g.followers_count }}</td></tr>
+  <tr><td>フォロー数</td><td>{{ g.friends_count }}</td></tr>
+    <tr><td>ツイート数</td><td>{{ g.statuses_count }}</td></tr>
+    <tr><td>ファボ数</td><td>{{ g.favourites_count }}</td></tr>
+    <tr><td>合計経験値</td><td>{{ g.total_point }}</td></tr>
+</table>
+         <div>
+        <a href="/twitter/logout"><button type="button" class="btn btn-primary btn-sm" >ログアウト</button></a>
     </div>
-<div>
-    <div>
-      <p><b>ScreenName</b>:{{ user.access_token.screen_name }}</p>
-        <p><b>UserId</b>:{{ user.access_token.user_id }}</p>
-        <p><b>OAuthTokenSecret</b>:{{ user.access_token.oauth_token_secret }}</p>
-        <p><b>OAuthToken</b>:{{ user.access_token.oauth_token }}</p>
-        <p><b>AuthTime</b>:{{ user.extra_data.auth_time }}</p>
+        </div>
+
+      </div>
+      <!-- /.row -->
 
 
     </div>
-</div>
+
+
+
+
 {% endblock body %}

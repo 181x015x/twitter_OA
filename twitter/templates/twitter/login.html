@@ -4,7 +4,103 @@
 
 {% block body %}
 
-<div>
-    <button type="button" onclick="location.href='{% url 'social:begin' 'twitter' %}'">Twitterログイン</button>
+
+<div class="alert alert-dismissible alert-info">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong> βverです。不具合ありましたらご連絡ください。</strong>
+</div>
+
+<div class="container">
+<div class="jumbotron">
+  <h1>文字数で成長するやつ
+   <small>TwitGrow</small>
+  </h1>
+
+    <div class="col-md-8">
+  <p>呟いた文字数だけ強くなれます。</p>
+    <p>新感覚、twitterで育成ゲーム（いわゆる放置ゲー)</p>
+        </div>
+
+
+    <br><br>
+  <button type="button" onclick="location.href='{% url 'social:begin' 'twitter' %}'" class="btn btn-primary btn-lg">Twitterログイン</button>
+</div>
+
+<div class="row">
+          <div class="col-md-4">
+            <h2>ランキング</h2>
+
+              <table class="table table-striped table-hover ">
+                <thead>
+    <tr>
+      <th>順位</th>
+      <th>名前</th>
+      <th>経験値</th>
+
+    </tr>
+  </thead>
+                 <tbody>
+    <tr>
+      <td>1</td>
+      <td>Column content</td>
+      <td>Column content</td>
+
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Column content</td>
+      <td>Column content</td>
+
+    </tr>
+    <tr class="info">
+      <td>3</td>
+      <td>Column content</td>
+      <td>Column content</td>
+
+    </tr>
+    <tr class="success">
+      <td>4</td>
+      <td>Column content</td>
+      <td>Column content</td>
+
+    </tr>
+    <tr class="danger">
+      <td>5</td>
+      <td>Column content</td>
+      <td>Column content</td>
+
+    </tr>
+    <tr class="warning">
+      <td>6</td>
+      <td>Column content</td>
+      <td>Column content</td>
+
+    </tr>
+    <tr class="active">
+      <td>7</td>
+      <td>Column content</td>
+      <td>Column content</td>
+
+    </tr>
+  </tbody>
+                </table>
+
+          </div>
+
+    <div class="col-md-4">
+
+            <h2>news</h2>
+              <p>・2018年6月　β版始動</p>
+
+
+          </div>
+          <div class="col-md-4">
+            <h2>連絡先</h2>
+
+                tester@gmail.xxx
+
+
+          </div>
+        </div>
 </div>
 {% endblock body %}
